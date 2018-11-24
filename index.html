@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+    Let's go down memory lane!
+  </p>
+  <form id="survey-form" method="get">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus="" type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required="">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required="" placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="hsgrad">* Which year did you graduate from high school?</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="hsgrad" id="hsgrad" min="1900" max="2018" class="input-field" placeholder="Enter the year you graduated from high school">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="FavGrade">Which was your favorite grade in school?</label>
+      </div>
+      <div class="rightTab">
+        <select id="FavGrade" name="FavGrade" class="dropdown">
+      <option disabled="" value="">Select an option</option>
+      <option value="1">1st grade</option>
+      <option value="2">2nd grade</option>
+      <option value="3">3rd grade</option>
+      <option value="4">4th grade</option>
+      <option value="5">5th grade</option>
+      <option value="6">6th grade</option>
+      <option value="ms">Middle school</option>
+      <option value="hs">High School</option>
+      <option value="uni">College/University</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* Rate your overal experience school: </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Excellent<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Very good<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>It was all right<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Somewhat unpleasant<input name="radio-buttons" value="4" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Never want to go back<input name="radio-buttons" value="5" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="6" type="radio" class="userRatings"></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What was your favorite aspect of school?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled="" selected="" value="">Select an option</option>
+      <option value="the teachers">the teachers</option>
+      <option value="having friends">having friends</option>
+      <option value="English">English</option>
+      <option value="math">math</option>
+      <option value="history">history</option>
+      <option value="science">science</option>
+      <option value="school projects">school projects</option>
+      <option value="playing sports">playing sports</option>
+      <option value="other">other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="extracurriculars">Which extracurricular activities did you participate in? <br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="checkbox"><label><input name="extracurriculars" value="1" type="checkbox" class="userRatings">Sports</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="2" type="checkbox" class="userRating">Band/Orchestra</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="3" type="checkbox" class="userRatings">Debate</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="4" type="checkbox" class="userRatings">clubs</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="5" type="checkbox" class="userRatings">Cheerleading</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="6" type="checkbox" class="userRatings">Student government</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="7" type="checkbox" class="userRatings">Volunteering outside of school</label></li>
+          <li class="checkbox"><label><input name="extracurriculars" value="8" type="checkbox" class="userRatings"> part-time job</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="story">Tell us your favorite childhood memory:</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your story here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
