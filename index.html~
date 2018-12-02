@@ -32,18 +32,18 @@
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label id="number-label" for="hsgrad">* Which year did you graduate from high school?</label>
+        <label id="number-label" for="number">* Which year did you graduate from high school?</label>
       </div>
       <div class="rightTab">
-        <input type="number" name="hsgrad" id="hsgrad" min="1900" max="2018" class="input-field" placeholder="Enter the year you graduated from high school">
+        <input type="number" name="hsgrad" id="number" min="1900" max="2018" class="input-field" placeholder="Enter the year you graduated from high school">
       </div>
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label for="FavGrade">Which was your favorite grade in school?</label>
+        <label for="dropdown">Which was your favorite grade in school?</label>
       </div>
       <div class="rightTab">
-        <select id="FavGrade" name="FavGrade" class="dropdown">
+        <select id="dropdown" name="dropdown" class="dropdown">
       <option disabled="" value="">Select an option</option>
       <option value="1">1st grade</option>
       <option value="2">2nd grade</option>
